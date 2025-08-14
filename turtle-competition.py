@@ -2,12 +2,10 @@ import turtle
 import random
 import time
 
-# Ekranni sozlash
 screen = turtle.Screen()
 screen.title("Turtle poygasi")
 screen.bgcolor("lightblue")
 
-# Start va finish chiziqlarini chizish
 pen = turtle.Turtle()
 pen.speed(0)
 pen.penup()
@@ -21,7 +19,6 @@ pen.pendown()
 pen.forward(200)
 pen.hideturtle()
 
-# Ishtirokchi turtellar
 colors = ["red", "green", "blue", "orange", "purple"]
 racers = []
 
@@ -35,7 +32,6 @@ for i in range(5):
     racer.goto(-200, y_positions[i])
     racers.append(racer)
 
-# Poyga boshlanishi
 time.sleep(1)
 finish_line_x = 200
 race_on = True
@@ -49,7 +45,6 @@ while race_on:
             winner_color = racer.pencolor()
             break
 
-# Natijani chiqarish
 turtle.penup()
 turtle.goto(-50, -100)
 turtle.color("black")
