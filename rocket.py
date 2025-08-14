@@ -14,19 +14,16 @@ raketa.shape("triangle")
 raketa.penup()
 raketa.speed(1)
 
-# Trayektoriya chizuvchi turtle
 path = turtle.Turtle()
 path.hideturtle()
 path.speed(0)
 path.color("white")
 
-# Parabolik trayektoriya chizish
-for angle in range(0, 91, 2):  # 0° dan 90° gacha
+for angle in range(0, 91, 2): 
     x = angle * 5
     y = (angle * math.sin(math.radians(60))) * 4 - 0.05 * (angle ** 2)
     path.goto(x - 200, y - 200)
 
-# Raketa uchish animatsiyasi
 for angle in range(0, 91, 2):
     x = angle * 5
     y = (angle * math.sin(math.radians(60))) * 4 - 0.05 * (angle ** 2)
