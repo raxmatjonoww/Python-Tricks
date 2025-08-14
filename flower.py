@@ -1,15 +1,13 @@
 import turtle
 import colorsys
 
-# Ekran sozlash
 t = turtle.Turtle()
 s = turtle.Screen()
 s.bgcolor("black")
 t.speed(0)
 turtle.colormode(255)
 
-# Ranglar tayyorlash
-n = 36  # gul yaproqlari soni
+n = 36  
 h = 0
 colors = []
 for i in range(n):
@@ -17,7 +15,6 @@ for i in range(n):
     colors.append((int(col[0]*255), int(col[1]*255), int(col[2]*255)))
     h += 1/n
 
-# Gul chizish
 for i in range(360):
     t.color(colors[i % n])
     t.circle(190 - i, 90)
